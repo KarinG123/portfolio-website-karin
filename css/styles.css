@@ -46,7 +46,7 @@ h2 {
   }
   
   a:visited { /* visited link */
-    color: #ff7f50;
+    color: #3a302d;
   }
 
   a:hover
@@ -168,3 +168,10 @@ Secondary Color (Green): #7fffd4;
   main {
     padding-top: 133px;
   }
+
+  .social.media.icon {
+    width: 24px;
+  }
+  /* hero>chnage logo to h2
+  add buttom border
+  fix spacing above navigation*/
