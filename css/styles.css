@@ -5,7 +5,7 @@
 body {
 background-color: lightgray;
 font-family: 'Roboto Condensed', sans-serif; /* sans-serif is a fallback font- If, for whatever reason, Lato can’t be loaded */
-font-size: 16px; /* Sets the font size to 16px */
+font-size: 18px; /* Sets the font size to 18px */
 font-weight: 300; /* Sets the font weight to 300 */
 line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
 color: #4a4a4a;
@@ -118,10 +118,18 @@ Secondary Color (Green): #7fffd4;
 
   #work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; } /*adds border bottom and padding specifically to elements with both the work ID and the row class.*/
   
+  #hero {
+    text-align: center; /* Centers text */
+  }
+  
   #hero h1 {
     text-align: center; /* Centers text */
   }
 
+  #hero span {
+    display: block;
+  }
+  
   .center {
     text-align: center;
   }
@@ -172,6 +180,77 @@ Secondary Color (Green): #7fffd4;
   .social.media.icon {
     width: 24px;
   }
-  /* hero>chnage logo to h2
+  /* Task 1.7 hero>chnage logo to h2
   add buttom border
   fix spacing above navigation*/
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+    .col-md-6 {
+        width: 50%;
+      }
+
+    #about-page h3 { margin-top: 0;}
+  }
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+    .col-lg-7 {width: 58.33%;}
+
+    .col-lg-5 {width: 41.66%;}
+
+    #about-page h3 { margin-top: 0;}
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
+
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+[class*="col-"] { /*it ensures that every class with at least col- in it will be affected. if you were to have col-md-6, col-lg-8, and col-xl-4  All three of them would be floated left*/
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
