@@ -178,8 +178,7 @@ Secondary Color (Green): #7fffd4;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
-    border-bottom: black;
-    border-bottom-width: 2px;
+    border-bottom: 1px solid #4a4a4a;
   }
   main {
     padding-top: 133px;
