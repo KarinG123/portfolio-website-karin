@@ -64,10 +64,13 @@ h2 {
     background-color: #ff7f50;
     color: #ffffff; /* needed to override the default link color */
     font-weight: 400;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #994c30; /* width of the border, type, color */
+    transition-duration: 0.2s;
     transition: 0.2s opacity;
+    transition-property: opacity;
   }
   .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
@@ -172,6 +175,8 @@ Secondary Color (Green): #7fffd4;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
+    border-bottom: black;
+    border-bottom-width: 2px;
   }
   main {
     padding-top: 133px;
@@ -180,9 +185,7 @@ Secondary Color (Green): #7fffd4;
   .social.media.icon {
     width: 24px;
   }
-  /* Task 1.7 hero>chnage logo to h2
-  add buttom border
-  fix spacing above navigation*/
+  
 
 
 /* ==============================
@@ -254,3 +257,51 @@ X-large devices (1440px or larger)
     clear: both;
     display: table;
   }
+
+  .berlin-illustrationwidth {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+   
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-front {
+    animation-duration: 10s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation-duration: 20s;
+    animation-name: cloud-move-reverse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  
