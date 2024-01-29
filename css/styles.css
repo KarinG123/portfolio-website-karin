@@ -82,6 +82,9 @@ h2 {
     color: #ff7f50;
     text-transform: uppercase;
     border: 2px solid #ff7f50;
+    transition-duration: 0.2s;
+    transition: 0.2s opacity;
+    transition-property: opacity;
   }
   .button.contact:hover {
     background-color: #ff7f50;
@@ -186,8 +189,9 @@ Secondary Color (Green): #7fffd4;
     width: 24px;
   }
   
-
-
+.about {
+text-align: center;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
