@@ -2,4 +2,4 @@
   alert("Hello");
 </script>
 
-console.log(Hi! Welcome to My Portfolio Site”)
+console.log ('Hi! Welcome to My Portfolio Site');
