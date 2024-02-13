@@ -258,7 +258,17 @@ Medium devices (640px and larger)
     #about-page h3 { margin-top: 0;}
   }
 
+  [class*="col-"] { /*it ensures that every class with at least col- in it will be affected. if you were to have col-md-6, col-lg-8, and col-xl-4  All three of them would be floated left*/
+    float: left;
+    padding: 10px;
+  }
 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -295,16 +305,6 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
 }
 
-[class*="col-"] { /*it ensures that every class with at least col- in it will be affected. if you were to have col-md-6, col-lg-8, and col-xl-4  All three of them would be floated left*/
-    float: left;
-    padding: 10px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
   .berlin-illustrationwidth {
     width: 100%;
