@@ -16,16 +16,20 @@
   <body id="about-page">
 
 
-<header>
-  <div class="container">
-      <img src="#" alt="Karin's profile picture" >
-      <nav>
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo"> Karin Gruman UX Designer </a>   <!--instead of Logo-->
+        <nav>
+         
           <ul>
-              <li><a href="be.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href ="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <li><a href="be.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href ="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+          </nav>
+    </div>
   </div>
 
 </header>
@@ -38,10 +42,11 @@
 
 <div> 
     <div>
-        <picture> <picture>
+        <picture class="profile-picture"> 
           <source srcset="img/me/me.mobile.png" media="(max-width:767px)">
           <img src="img/me/me.desktop.png" alt="Profile Picture">
-        </picture></picture>
+        </picture> 
+
 <!--This div will hold our two columns, “My Story” and “Skills & Tools-->
         <div clas="row">
             <div class="col-lg-7"> <!--Start First Column-->
