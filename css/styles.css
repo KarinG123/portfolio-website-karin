@@ -56,12 +56,13 @@ h2 {
   }
 
   .profile-picture img {
-    height: 450px;
-    width: 450px;
+    height: auto;
+    max-width: 450px;
     object-fit: cover;
     border-radius: 100vw;
+    aspect-ratio: 1/1;
     }
-    
+
     .profile-picture {
         display: block;
         text-align: center;
@@ -284,8 +285,12 @@ Medium devices (640px and larger)
         width: 50%;
       }
 
+    .col-md-12  {
+        width: 100%;
+      }
+
     #about-page h3 { margin-top: 0;}
-  }
+  
 
   [class*="col-"] { /*it ensures that every class with at least col- in it will be affected. if you were to have col-md-6, col-lg-8, and col-xl-4  All three of them would be floated left*/
     float: left;
@@ -297,7 +302,7 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
-
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -313,6 +318,10 @@ Large devices (1024px or larger)
 
     .col-lg-5 {width: 41.66%;}
 
+    .col-lg-12  {
+        width: 100%;
+      }
+      
     #about-page h3 { margin-top: 0;}
 
     .container {
