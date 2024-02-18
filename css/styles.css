@@ -102,6 +102,7 @@ h2 {
     border: 2px solid #ff7f50;
     transition-duration: 0.4s;
     transition-property: background-color;
+    margin-bottom: 20px;
   }
   .button.contact:hover {
     background-color: #ff7f50;
