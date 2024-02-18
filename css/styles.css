@@ -238,7 +238,7 @@ Secondary Color (Green): #7fffd4;
   }
 
   .social.media.icon {
-    width: 24px;
+    width: 54px;
   }
   
 .about {
@@ -321,7 +321,7 @@ Large devices (1024px or larger)
     .col-lg-12  {
         width: 100%;
       }
-      
+
     #about-page h3 { margin-top: 0;}
 
     .container {
